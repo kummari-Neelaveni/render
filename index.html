@@ -144,7 +144,7 @@
 <script>
   // get users
   async function getUsers() {
-  let response = await fetch("http://localhost:3000/student");
+  let response = await fetch("https://render-1-ckkj.onrender.com/student");
   let users = await response.json();
   console.log(" Users List:", users);
 
@@ -152,6 +152,7 @@
       users.forEach(user => createCard(user));
 }
 getUsers();
+
 // cards creation cards
 function createCard(user) {
       let card = document.createElement("div");
@@ -176,7 +177,7 @@ async function postdata(event) {
 
   const userObj = { id: id, city: city, age: age };
 
-  const response = await fetch("http://localhost:3000/student", {
+  const response = await fetch("https://render-1-ckkj.onrender.com/student", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(userObj)
@@ -198,11 +199,12 @@ async function deletedata(event) {
 
   const id = document.getElementById("deleteUserId").value;
 
-  await fetch(`http://localhost:3000/student/${id}`, {
+  await fetch(`https://render-1-ckkj.onrender.com/student/${id}`, {
     method: "DELETE"
   });
-
+  
   console.log(`Deleted user with ID: ${id}`);
+
   if (card) {
         card.remove();
       }
@@ -222,7 +224,7 @@ async function putdata(event) {
 
   const userObj = { id: id, city: city, age: age };
 
-  const response = await fetch(`http://localhost:3000/student/${id}`, {
+  const response = await fetch(`https://render-1-ckkj.onrender.com/student/${id}`, {
     method: "PUT",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(userObj)

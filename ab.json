@@ -1,0 +1,44 @@
+{
+  "student": [
+    {
+      "id": 4,
+      "city": "gujarat",
+      "age": 22
+    },
+    {
+      "id": 2,
+      "city": "amalapuram",
+      "age": 22
+    },
+    {
+      "id": 5,
+      "city": "rajasthan",
+      "age": 22
+    },
+    {
+      "id": 6,
+      "city": "andhra",
+      "age": 22
+    },
+    {
+      "id": 7,
+      "city": "rajasthan",
+      "age": 33
+    },
+    {
+      "id": 8,
+      "city": "amalapuram",
+      "age": 55
+    },
+    {
+      "id": 9,
+      "city": "rajasthan",
+      "age": 33
+    },
+    {
+      "id": 10,
+      "city": "amalapuram",
+      "age": 33
+    }
+  ]
+}
